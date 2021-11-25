@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@300&family=Zen+Kurenaido&display=swap');
+
+
+
+.container{
+	margin-top: 100px;
+	width: 100%;
+	height: 600px;
+}
+
+.box{
+	width: 400px;
+	height: 575px;
+	border-radius: 5px;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+	background-color: white;
+}
+
+.box .top{
+	font-family: 'Zen Kurenaido', sans-serif;
+	text-align: center;
+	padding-top: 10px;
+	height: 90px;
+}
+
+.box .middle{
+	height: 380px;
+	display: flex;
+	justify-content: center;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	overflow: scroll;
+}
+.box .bottom{
+	text-align: center;
+	padding-top: 12px;
+	height: 40px;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.box .middle .todos-list{
+	width: 380px;
+	height: 330px;
+	background-color: white;
+	padding: 15px;
+}
+
+.todos-list .item{
+	margin-top: 10px;
+	padding-top: 10px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	transition: all .3s;
+}
+
+.todos-list .item:hover{ 
+	background-color: rgba(100, 100, 100, 0.1);
+}
+
+.todos-list .item .content{
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 16px;
+	display: inline-block;
+	margin-left: 5px;
+	width: 270px;
+	height: 30px;
+}
+
+
+
+
+.todos-list .item .delete{
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+
+.box .bottom .insert{
+	width: 310px;
+	height: 40px;
+	border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.box .bottom .submit{
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	transition: all .3s;
+}
+
+.box .bottom .submit:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.box .All{
+	display: flex;
+	justify-content: space-between;
+	margin: 5px 5px;
+}
+
+.box .All input{
+	border-radius: 100px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.box .All input:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
