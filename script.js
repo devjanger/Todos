@@ -64,6 +64,18 @@ function initialize(){
 
 	})
 
+	$('.content').on('click', (item)=>{
+		var content = $(item.target).text();
+		var input = prompt('수정할 내용', content);
+
+		if( input != null ){
+			var idx = $($(item.target).parent()).attr('idx');
+			modifyTodosByIdx( idx, input );
+			printTodos();
+		}
+
+	})	
+
 
 	// 데이터 세이브
 
@@ -134,6 +146,7 @@ $('.All .AllDelete').on('click', ()=>{
 
 
 
+
 function printTodos(){
 
 	$('.todos-list').empty();
@@ -173,6 +186,10 @@ function checkingTodosByIdx(idx, checked){
 
 function deleteTodosByIdx(idx){
 	todosList.splice(idx, 1);
+}
+
+function modifyTodosByIdx(idx, content){
+	todosList[idx].content = content;
 }
 
 function isCheckedAll(){
